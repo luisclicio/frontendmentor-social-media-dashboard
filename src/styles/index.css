@@ -1,6 +1,61 @@
-body {
+:root {
+  /* Primary colors */
+  --lime-green-color: #1db489;
+  --bright-red-color: #dc414c;
+
+  /* Social media colors */
+  --facebook-color: #198ff5;
+  --twitter-color: #1ca0f2;
+  --instagram-color: linear-gradient(#fdc468, #df4996);
+  --youtube-color: #c4032a;
+
+  /* Switcher colors */
+  --switcher-color-dark: linear-gradient(#378fe6, #3eda82);
+  --switcher-color-light: #aeb3cb;
+
+  /* Dark theme colors */
+  --very-dark-blue-bg-color: #1e202a;
+  --very-dark-blue-top-bg-color: #1f212e;
+  --dark-desaturated-blue-card-bg-color: #252a41;
+  --white-primary-text-color: #ffffff;
+  --desaturated-blue-secondary-text-color: #8b97c6;
+
+  /* Light theme colors */
+  --white-bg-color: #ffffff;
+  --very-pale-blue-top-bg-color: #f5f7ff;
+  --light-grayish-blue-card-bg-color: #f0f2fa;
+  --very-dark-blue-primary-text-color: #1e202a;
+  --dark-grayish-blue-secondary-text-color: #63687e;
+
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Current theme colors */
+  --bg-color: var(--very-dark-blue-bg-color);
+  --top-bg-color: var(--very-dark-blue-top-bg-color);
+  --card-bg-color: var(--dark-desaturated-blue-card-bg-color);
+  --primary-text-color: var(--white-primary-text-color);
+  --secondary-text-color: var(--desaturated-blue-secondary-text-color);
+
+  background: var(--bg-color);
+  color: var(--primary-text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
+}
+
+body.light {
+  /* Current theme colors */
+  --bg-color: var(--white-bg-color);
+  --top-bg-color: var(--very-pale-blue-top-bg-color);
+  --card-bg-color: var(--light-grayish-blue-card-bg-color);
+  --primary-text-color: var(--very-dark-blue-primary-text-color);
+  --secondary-text-color: var(--dark-grayish-blue-secondary-text-color);
 }

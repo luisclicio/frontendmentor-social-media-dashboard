@@ -1,21 +1,24 @@
 .toggle-theme {
-  display: inline-block;
+  align-items: center;
+  display: flex;
   height: 30px;
-  position: relative;
+  justify-content: space-between;
   width: 158px;
 }
 
 .toggle-theme__text {
-  color: var(--white-primary-text-color);
+  color: var(--secondary-text-color);
   font-size: 1.6rem;
   font-weight: 700;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  transition: 400ms;
   user-select: none;
 }
 
-body.light .toggle-theme__text {
+.toggle-theme:hover .toggle-theme__text {
+  color: var(--white-primary-text-color);
+}
+
+.container.light .toggle-theme:hover .toggle-theme__text {
   color: var(--dark-grayish-blue-secondary-text-color);
 }
 
@@ -28,9 +31,7 @@ body.light .toggle-theme__text {
   border-radius: 18px;
   cursor: pointer;
   height: 30px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  position: relative;
   transition: 400ms;
   width: 64px;
 }
@@ -57,4 +58,14 @@ body.light .toggle-theme__text {
 
 .toggle-theme__checkbox:checked + .toggle-theme__switcher::before {
   transform: translateX(34px);
+}
+
+@media (max-width: 720px) {
+  .toggle-theme {
+    width: 100%;
+  }
+
+  .toggle-theme__text {
+    font-size: 1.4rem;
+  }
 }

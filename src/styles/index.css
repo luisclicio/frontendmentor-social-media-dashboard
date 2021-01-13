@@ -38,7 +38,7 @@
   transition: background 400ms;
 }
 
-body {
+.container {
   /* Current theme colors */
   --bg-color: var(--very-dark-blue-bg-color);
   --top-bg-color: var(--very-dark-blue-top-bg-color);
@@ -50,9 +50,10 @@ body {
   color: var(--primary-text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
-body.light {
+.container.light {
   /* Current theme colors */
   --bg-color: var(--white-bg-color);
   --top-bg-color: var(--very-pale-blue-top-bg-color);

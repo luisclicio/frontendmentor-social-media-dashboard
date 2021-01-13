@@ -1,12 +1,13 @@
+import { ProfileProps } from '../@types';
 import ThemeSwitcher from './ThemeSwitcher';
 
 import '../styles/components/TopBar.css';
 
 interface TopBarProps {
-  totalFollowers: number;
+  profiles: Array<ProfileProps>;
 }
 
-export default function TopBar({ totalFollowers }: TopBarProps) {
+export default function TopBar({ profiles }: TopBarProps) {
   function formatNumberToLocale(number: number) {
     return Intl.NumberFormat().format(number);
   }
@@ -19,7 +20,10 @@ export default function TopBar({ totalFollowers }: TopBarProps) {
             Social Media Dashboard
           </h1>
           <h3 className="top-bar__wrapper__content__total-followers">
-            Total Followers: {formatNumberToLocale(totalFollowers)}
+            Total Followers:{' '}
+            {formatNumberToLocale(
+              profiles.reduce((total, { followers }) => total + followers, 0)
+            )}
           </h3>
         </section>
 

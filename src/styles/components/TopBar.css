@@ -1,5 +1,6 @@
 .top-bar {
   background: var(--top-bg-color);
+  border-radius: 0 0 16px 16px;
   height: 300px;
 }
 

@@ -1,0 +1,29 @@
+.top-bar {
+  background: var(--top-bg-color);
+  height: 300px;
+}
+
+.top-bar__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 40px 16px;
+}
+
+.top-bar__wrapper__content {
+}
+
+.top-bar__wrapper__content__title {
+  color: var(--primary-text-color);
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.top-bar__wrapper__content__total-followers {
+  color: var(--secondary-text-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 4px;
+}

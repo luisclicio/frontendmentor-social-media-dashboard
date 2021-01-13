@@ -1,4 +1,6 @@
-export default {
+import { DashboardProps } from './@types';
+
+const fakeData: DashboardProps = {
   profiles: [
     {
       socialMedia: 'facebook',
@@ -76,3 +78,5 @@ export default {
     },
   ],
 };
+
+export default fakeData;

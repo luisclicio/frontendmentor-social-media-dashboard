@@ -1,0 +1,22 @@
+.statistic-view {
+  align-items: center;
+  display: flex;
+}
+
+.statistic-view__image {
+  margin-right: 4px;
+}
+
+.statistic-view__value {
+  color: var(--primary-text-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.statistic-view__value--positive {
+  color: var(--lime-green-color);
+}
+
+.statistic-view__value--negative {
+  color: var(--bright-red-color);
+}

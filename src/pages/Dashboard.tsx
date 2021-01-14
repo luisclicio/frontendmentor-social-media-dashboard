@@ -48,6 +48,35 @@ export default function Dashboard() {
           </section>
         </section>
       </main>
+
+      <footer className="footer-attribution">
+        <p className="footer-attribution__paragraph">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-attribution__paragraph__link"
+          >
+            {' '}
+            Frontend Mentor
+          </a>
+          .
+        </p>
+        <p className="footer-attribution__paragraph">
+          Coded by
+          <a
+            href="https://www.frontendmentor.io/profile/DarkTechLC"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-attribution__paragraph__link"
+          >
+            {' '}
+            Luís Clício
+          </a>
+          .
+        </p>
+      </footer>
     </>
   );
 }

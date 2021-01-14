@@ -1,0 +1,30 @@
+.dashboard-content {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 24px;
+  transform: translateY(-140px);
+}
+
+.dashboard-content__profiles {
+  align-items: center;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .dashboard-content__profiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .dashboard-content {
+    transform: translateY(-100px);
+  }
+
+  .dashboard-content__profiles {
+    grid-template-columns: 1fr;
+  }
+}

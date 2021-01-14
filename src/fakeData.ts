@@ -11,13 +11,13 @@ const fakeData: DashboardProps = {
     {
       socialMedia: 'twitter',
       username: '@nathanf',
-      followers: 1440,
+      followers: 1044,
       todayFollowers: 99,
     },
     {
       socialMedia: 'instagram',
       username: '@realnathanf',
-      followers: 11000,
+      followers: 11734,
       todayFollowers: 1099,
     },
     {

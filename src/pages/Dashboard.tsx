@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 
 import { DashboardProps } from '../@types';
-import ProfileCard from '../components/ProfileCard';
 import TopBar from '../components/TopBar';
+import ProfileCard from '../components/ProfileCard';
+import OverviewCard from '../components/OverviewCard';
 
 import fakeData from '../fakeData';
 
@@ -32,7 +33,20 @@ export default function Dashboard() {
           ))}
         </section>
 
-        <section></section>
+        <section className="dashboard-content__overview">
+          <h1 className="dashboard-content__overview__title">
+            Overview - Today
+          </h1>
+
+          <section className="dashboard-content__overview__cards">
+            {data.overviews.map((overview) => (
+              <OverviewCard
+                key={`${overview.socialMedia}-${overview.amount}`}
+                overview={overview}
+              />
+            ))}
+          </section>
+        </section>
       </main>
     </>
   );

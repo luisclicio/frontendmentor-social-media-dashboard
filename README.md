@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+# 🎯 Frontend Mentor - Social media dashboard with theme switcher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
-## Available Scripts
+### 🔗 [Acesse a página do painel](https://frontendmentor-socialmediadashboard.vercel.app/)
 
-In the project directory, you can run:
+## 📋 Sumário
 
-### `yarn start`
+- [📋 Sumário](#-sumário)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [📖 Sobre](#-sobre)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [🛠 Tecnologias utilizadas](#-tecnologias-utilizadas)
 
-### `yarn test`
+- [⚙ Como executar o projeto](#-como-executar-o-projeto)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [⚖ Licença](#-licença)
 
-### `yarn build`
+## 📖 Sobre
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Esse repositório contém a resolução do desafio ["Social media dashboard with theme switcher"](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H), promovido pelo [Frontend Mentor](https://www.frontendmentor.io), que consiste em desenvolver a página web de um painel com informações de algumas redes sociais.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Tecnologias utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para a resolução do desafio, foram utilizadas as seguintes tecnologias:
 
-### `yarn eject`
+- [ReactJS](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## ⚙ Como executar o projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para rodar o projeto localmente, execute os comandos a seguir:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Clone o repositório:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  ```sh
+  git clone https://github.com/DarkTechLC/frontendmentor-social-media-dashboard.git
+  ```
 
-## Learn More
+- Navegue para a pasta:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  ```sh
+  cd frontendmentor-social-media-dashboard
+  ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Instale as dependências:
+
+  ```sh
+  npm install
+  # ou
+  yarn
+  ```
+
+- Inicie o projeto em modo de desenvolvimento:
+
+  ```sh
+  npm start
+  # ou
+  yarn start
+  ```
+
+- Para gerar a versão de produção:
+
+  ```sh
+  npm run build
+  # ou
+  yarn build
+  ```
+
+## ⚖ Licença
+
+Esse projeto está sob a licença [MIT](./LICENSE).

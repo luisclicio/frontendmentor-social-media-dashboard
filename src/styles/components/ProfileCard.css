@@ -1,0 +1,92 @@
+.profile-card {
+  align-items: center;
+  background: var(--card-bg-color);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 280px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  transition: 400ms;
+  padding: 16px;
+}
+
+.profile-card::before {
+  border-radius: 8px 8px 0 0;
+  content: '';
+  height: 8px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.profile-card:hover {
+  filter: invert(0.05);
+}
+
+.profile-card--facebook::before {
+  background: var(--facebook-color);
+}
+
+.profile-card--twitter::before {
+  background: var(--twitter-color);
+}
+
+.profile-card--instagram::before {
+  background: var(--instagram-color);
+}
+
+.profile-card--youtube::before {
+  background: var(--youtube-color);
+}
+
+.profile-card__header {
+  align-items: center;
+  display: flex;
+}
+
+.profile-card__header__username {
+  color: var(--secondary-text-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.profile-card__followers {
+  margin-top: 36px;
+}
+
+.profile-card__followers__amount {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.profile-card__followers__text {
+  color: var(--secondary-text-color);
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
+.profile-card__footer {
+  margin-top: 36px;
+}
+
+@media (max-width: 720px) {
+  .profile-card {
+    height: 240px;
+  }
+
+  .profile-card__followers {
+    margin-top: 24px;
+  }
+
+  .profile-card__footer {
+    margin-top: 24px;
+  }
+}

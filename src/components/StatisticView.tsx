@@ -27,7 +27,7 @@ export default function StatisticView({ value, text }: StatisticViewProps) {
           isPositive ? 'positive' : 'negative'
         }`}
       >
-        {`${absolute(value)} ${text}`}
+        {`${absolute(value)}${text}`}
       </span>
     </div>
   );

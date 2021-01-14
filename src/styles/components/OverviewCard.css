@@ -1,0 +1,50 @@
+.overview-card {
+  align-items: flex-start;
+  background: var(--card-bg-color);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 140px;
+  justify-content: space-between;
+  position: relative;
+  transition: 400ms;
+  padding: 24px;
+}
+
+.overview-card:hover {
+  filter: invert(0.05);
+}
+
+.overview-card__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.overview-card__header__title {
+  color: var(--secondary-text-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.overview-card__content {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.overview-card__content__amount {
+  color: var(--primary-text-color);
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .overview-card {
+    height: 120px;
+  }
+}

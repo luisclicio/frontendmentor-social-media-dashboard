@@ -21,7 +21,7 @@ export default function ProfileCard({ profile }: { profile: ProfileProps }) {
       </section>
 
       <footer className="profile-card__footer">
-        <StatisticView value={profile.todayFollowers} text="Today" />
+        <StatisticView value={profile.todayFollowers} text=" Today" />
       </footer>
     </article>
   );
